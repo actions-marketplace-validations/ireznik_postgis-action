@@ -8,17 +8,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@2
       
     - name: Set up Postgresql with Postgis
-      uses: huaxk/postgis-action@v1
+      uses: ireznik/postgis-action@v1
       with:
         postgresql user: 'test'
         postgresql password: ${{ secrets.DatabasePassword }}
         postgresql db: 'test'
 
-    - uses: jiro4989/setup-nim-action@v1.0.1
-      
+    - uses: jiro4989/setup-nim-action@v1.3.4
+        
     - name: Run test
       run: nim c -r tests/connection.nim
       env:
