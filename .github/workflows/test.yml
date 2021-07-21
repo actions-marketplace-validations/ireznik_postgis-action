@@ -11,10 +11,10 @@ jobs:
     - uses: actions/checkout@v2
       
     - name: Set up Postgresql with Postgis
-      uses: ireznik/postgis-action@v1
+      uses: ireznik/postgis-action@v12
       with:
         postgresql user: 'test'
-        postgresql password: ${{ secrets.DatabasePassword }}
+        postgresql password: 'test'
         postgresql db: 'test'
 
     - uses: jiro4989/setup-nim-action@v1.3.4
@@ -22,4 +22,4 @@ jobs:
     - name: Run test
       run: nim c -r tests/connection.nim
       env:
-        password: ${{ secrets.DatabasePassword }}
+        password: 'test'
