@@ -1,6 +1,6 @@
 name: 'Setup PostgreSQL with Postgis'
 description: 'Setup a PostgreSQL database with Postgis'
-author: 'huaxk'
+author: 'huaxk,ireznik'
 branding:
   icon: 'database'
   color: 'green'
