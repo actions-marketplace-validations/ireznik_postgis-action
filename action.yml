@@ -1,5 +1,5 @@
-name: 'Setup PostgreSQL with Postgis'
-description: 'Setup a PostgreSQL database with Postgis'
+name: 'Setup PostgreSQL with Postgis 12'
+description: 'Setup a PostgreSQL 12 database with Postgis'
 author: 'huaxk,ireznik'
 branding:
   icon: 'database'
