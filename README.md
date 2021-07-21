@@ -7,7 +7,7 @@ Inspired by https://github.com/Harmon758/postgresql-action, @Harmon758 Thanks!
 Basic:
 ```yaml
 steps:
-- uses: ireznik/postgis-action@mmaster
+- uses: ireznik/postgis-action@v12
   with:
     postgresql version: '12-master'  # See https://hub.docker.com/r/postgis/postgis for available versions, if it is not specified, use the default value 'latest'
     postgresql password: 'test'   # This environment variable sets the superuser password for PostgreSQL, maybe string or secrets, the default superuser is defined by the input environment variable: postgresql user.
